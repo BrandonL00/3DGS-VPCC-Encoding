@@ -1,0 +1,12 @@
+diff --git a/cfg/common/ctc-common-lossless-geometry.cfg b/cfg/common/ctc-common-lossless-geometry.cfg
+index c54a2e8..76a9b32 100644
+--- a/cfg/common/ctc-common-lossless-geometry.cfg
++++ b/cfg/common/ctc-common-lossless-geometry.cfg
+@@ -51,7 +51,6 @@ flagGeometrySmoothing:                0
+ # -- NB: enhancedOccupancyMapCode also affects segmentation
+ rawPointsPatch:                       1
+ attributeBGFill:                      3
+-losslessAttribute:                    0
+ noAttributes:                         1
+ attributeVideo444:                    1
+ enhancedOccupancyMapCode:             1

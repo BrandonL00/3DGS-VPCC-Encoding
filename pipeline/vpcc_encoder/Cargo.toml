@@ -1,0 +1,13 @@
+[package]
+name = "vpcc_encoder"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bincode = "1"
+discord_bot = { path = "../../crates/discord_bot" }
+deflate_coder = { path = "../../crates/deflate_coder" }
+gaussian_parser = { path = "../../crates/gaussian_parser" }
+gaussian_packing = { path = "../../crates/gaussian_packing" }
+gaussian_types = { workspace = true }
+indicatif = "0.17"

@@ -1,0 +1,361 @@
+{
+  "encoder": "E19",
+  "stage": "release-candidate-1",
+  "files": [
+    {
+      "path": ".github/workflows/checks.yml",
+      "bytes": 541,
+      "sha256": "ce05d52f7e935015e8e301f011ca0b97c435bf3e4eef69468bdd04c7053b3ff5"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 152,
+      "sha256": "3f309308b4072d1aab8b757876a435a98fbba345587e7fe45530d8476340a38f"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 30545,
+      "sha256": "6b0a4da974561a3fc7ff4892c6c4ea984a36cd879fa419a8d066e302b8f165cc"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 445,
+      "sha256": "973f9f3710506ed7f067c08b72587c771b8089f4acb9b822b6aff6486f0a4284"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1073,
+      "sha256": "3ce7d9e02dc11926f4e20e0a138ab9fe87a5acabb283ba0b21510d62771c418f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5508,
+      "sha256": "a95ff1dc0f88b831d0fd6281c7b58ea04dbe93029843d88e512c12fd155e08f1"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 1964,
+      "sha256": "a2b87177c24a7f0c72d766af3fae6b6d241649dc7c00b382efd94ad5e8d40091"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 2361,
+      "sha256": "2ef8a2dc79d4dd653dc71330040d4cdeabee17944adf7076e3d8eeecd960b143"
+    },
+    {
+      "path": "crates/deflate_coder/Cargo.toml",
+      "bytes": 181,
+      "sha256": "987f82d0f8803397930d1f167ec3acb96be22039cfaf2f0034ec49501c8925d1"
+    },
+    {
+      "path": "crates/deflate_coder/src/lib.rs",
+      "bytes": 3589,
+      "sha256": "12eb409ad8c3c2f7ce3313170b9924a71ce849407beea3c438b77348316b228f"
+    },
+    {
+      "path": "crates/discord_bot/Cargo.toml",
+      "bytes": 174,
+      "sha256": "cfa43ff379069230b24d040c3fa98e7bbf61581db1e5119f845a80c490d98393"
+    },
+    {
+      "path": "crates/discord_bot/src/lib.rs",
+      "bytes": 12168,
+      "sha256": "52f724958de08195d16b82745660c2b14c25f88e3eaf9c082dbc048819bc144b"
+    },
+    {
+      "path": "crates/gaussian_packing/Cargo.toml",
+      "bytes": 380,
+      "sha256": "7f8932b8a9ec3dcd1767abdfda8364a69298ea5cc2d6998e85d50f01dbc66365"
+    },
+    {
+      "path": "crates/gaussian_packing/src/experimental_streams.rs",
+      "bytes": 37665,
+      "sha256": "a7fcba66ee1c94bf196471bdf02a7347c907e4509497191208f1cbf5bb5d4d9d"
+    },
+    {
+      "path": "crates/gaussian_packing/src/lib.rs",
+      "bytes": 104950,
+      "sha256": "9a1b9ee89022c858afc0b73ee3204031f33b6bb9624d846b9f26073bd0d71352"
+    },
+    {
+      "path": "crates/gaussian_parser/Cargo.toml",
+      "bytes": 339,
+      "sha256": "62c498c993f16ab0b4dab69f044b098441d144fe810910a5f9122487dc2d82da"
+    },
+    {
+      "path": "crates/gaussian_parser/src/lib.rs",
+      "bytes": 15201,
+      "sha256": "eb38412976fe04795f9c321edd4169cf85c2f80d1b19ae4213c8b5e47103d325"
+    },
+    {
+      "path": "crates/gaussian_sorter/Cargo.toml",
+      "bytes": 152,
+      "sha256": "57fb8717a4613a42c48f929883f70129bd57d7ca9ee43b03c8a13a453ae70684"
+    },
+    {
+      "path": "crates/gaussian_sorter/src/lib.rs",
+      "bytes": 1970,
+      "sha256": "3f839b310a972d4d9962b7f085ba6b1038a3c2720061153343d11b9390a57ce7"
+    },
+    {
+      "path": "crates/gaussian_types/Cargo.toml",
+      "bytes": 164,
+      "sha256": "1ad2f8b073fb37eac76874abd4b835e2653402310896967d88f2ea331c13bda7"
+    },
+    {
+      "path": "crates/gaussian_types/src/lib.rs",
+      "bytes": 444,
+      "sha256": "5d13ff197233c8ff560cfc22d54c78f9954365160b240b7560a8fff8d5601768"
+    },
+    {
+      "path": "dependencies/TMC2-COPYING",
+      "bytes": 1727,
+      "sha256": "c7e38fada3343e7a92e73a8ef000c5416c468ef72dfbc8dff3b17c23bb3016cf"
+    },
+    {
+      "path": "dependencies/ffsplat/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "dependencies/ffsplat/pyproject.toml",
+      "bytes": 4475,
+      "sha256": "96eca9b95ab05f1a4f215b7fa055c287620703dbf3d9d53b2a891ce4d8590246"
+    },
+    {
+      "path": "dependencies/ffsplat/uv.lock",
+      "bytes": 690027,
+      "sha256": "6bf09752919f15168a181a0bbb5be66f89aa3bf222cf8157af5519557dd2cb5b"
+    },
+    {
+      "path": "dependencies/tested-environment.json",
+      "bytes": 965,
+      "sha256": "f600734c47c25f707503e5a7eb03dad0ec1d196c3dbbd7d456abcca41a1650af"
+    },
+    {
+      "path": "docs/FORMAT.md",
+      "bytes": 1340,
+      "sha256": "4d9f35f07abc4b94723edc04fb3bd1a6f43a8197add4cc42f26e4f0dc399fde9"
+    },
+    {
+      "path": "e19.py",
+      "bytes": 6362,
+      "sha256": "a893fe12c2956d08a688409cf1b329390a150f73300cc2e1bc43eb687d56f099"
+    },
+    {
+      "path": "examples/make_fixture.py",
+      "bytes": 1249,
+      "sha256": "a2ecca39fda2e7d795b2f2c4870b58cef4c965aec8d0dd0843f3558e796fa9cd"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/Cargo.toml",
+      "bytes": 270,
+      "sha256": "7ba00d350d88373f2c520b0969b45c7426fd1507bdb339156d15fb74de58fb6d"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/scripts/build_v17_hybrid.py",
+      "bytes": 6562,
+      "sha256": "faeeb4555f7a938462af8e48347413930e50cd447def31db6cec739ef589772a"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/scripts/decode_v18_hybrid.py",
+      "bytes": 11772,
+      "sha256": "9a892d5f1861cf3827d2b4165a057f3b50760d608fd54caf54d1c8d222e6063b"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/scripts/encode_sog_morton.py",
+      "bytes": 6548,
+      "sha256": "c44e6567d3c25222fec6013073ce3e456a07c3d6c0c7a214da684a7ccfb3c928"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/scripts/lossless_geometry.py",
+      "bytes": 5836,
+      "sha256": "1df554664e0975d213450e6c57b60cded6c3e0449c730ccfb3306c1d1bab73c8"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/scripts/package_geometry_probe.py",
+      "bytes": 3989,
+      "sha256": "f82ecee23ee7c2a93b49b049a35f25d8c11de59f2fa3f5836ba0ac2d13f03f10"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/scripts/probe_geometry_layouts.py",
+      "bytes": 9832,
+      "sha256": "383746be311e8357625bb4a53347806464d32e34074127b6a0d7ade20d1a9715"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/scripts/run_v19_encoder.py",
+      "bytes": 11110,
+      "sha256": "5fd81b607b40f539d6a54a0d2604d5b1e271c56e73446cc14260ef2fba571841"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/scripts/semantic_profiles.py",
+      "bytes": 6446,
+      "sha256": "4405bd7a453fd9bca5314674c72d3ffa794bda168c551de702d4c1eebfe9b8ed"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/scripts/test_lossless_geometry.py",
+      "bytes": 1503,
+      "sha256": "7208c0a07064b45a4a37be1ebb7b43f7454ad16600800b523176b28a2e91dd2a"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/scripts/test_residual_packing.py",
+      "bytes": 2178,
+      "sha256": "81e9e4d7afa9cd030b7c349f2a70b2d327e36cd22f43c7a312aa7b435364f1f1"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/scripts/test_semantic_profiles.py",
+      "bytes": 2987,
+      "sha256": "6718b535846dfc77f7e5c984e0cd1a26940eab5b6e4fdfcb84c609d88ba79853"
+    },
+    {
+      "path": "pipeline/tmc2_adapter/src/main.rs",
+      "bytes": 187861,
+      "sha256": "ba30b52f31145552998e17314b3deba39899850f06784f366f9b248942477575"
+    },
+    {
+      "path": "pipeline/vpcc_decoder/Cargo.toml",
+      "bytes": 197,
+      "sha256": "f7c458c1ddc05e40cb8347405aeecf2afbabf98dfd6b1d03085abc92db3de538"
+    },
+    {
+      "path": "pipeline/vpcc_decoder/src/main.rs",
+      "bytes": 5085,
+      "sha256": "2743f147939aa5bb040277a40c7c9394a84694b5d0c676765e4a7e0d27dcb644"
+    },
+    {
+      "path": "pipeline/vpcc_encoder/Cargo.toml",
+      "bytes": 384,
+      "sha256": "19db49a7fea286d1f8bfc347c4274e9c4c553799ca3556d5b0386d96d19d0c6d"
+    },
+    {
+      "path": "pipeline/vpcc_encoder/src/cli.rs",
+      "bytes": 15904,
+      "sha256": "83403fb97a887b0ef0255e3c066d074d59573918b744f37b265ac120af5988b7"
+    },
+    {
+      "path": "pipeline/vpcc_encoder/src/debug.rs",
+      "bytes": 30482,
+      "sha256": "8851b64a189b5d307af453eeb29015c9aba38ff3f92c0fe45fc296777d940331"
+    },
+    {
+      "path": "pipeline/vpcc_encoder/src/logging.rs",
+      "bytes": 2450,
+      "sha256": "a481cdef599df1db295e3964b938a8dca4a21de60be8198ce1b2a00cff598af3"
+    },
+    {
+      "path": "pipeline/vpcc_encoder/src/main.rs",
+      "bytes": 192,
+      "sha256": "99a4116586a4cd8ce5c4cffebee5a3e447fc1c22ad18c3b5ed9ba607f70b0d4b"
+    },
+    {
+      "path": "pipeline/vpcc_encoder/src/metrics.rs",
+      "bytes": 29681,
+      "sha256": "adc78b7750019db8e5098e10d9a726dcacfb915c9b1a52c2529f2d96c0a1ea70"
+    },
+    {
+      "path": "pipeline/vpcc_encoder/src/pipeline.rs",
+      "bytes": 23914,
+      "sha256": "0eabeb4b93dd8a37b8269f8a96ce1231f39711fe63ea6f06136b9321f4d05c3c"
+    },
+    {
+      "path": "pipeline/vpcc_encoder/src/report.rs",
+      "bytes": 13439,
+      "sha256": "2758b1fc5b1838a8eac04e1fd1ad9f5379b084d9f9238089bb2480355ef4e51c"
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 1633,
+      "sha256": "b9c54d2b312800e7f82226996caad675aec237dae6dbc8e3c0801735e5e33dba"
+    },
+    {
+      "path": "results/bicycle_SH_sweep.csv",
+      "bytes": 1345,
+      "sha256": "9fb5e27f0405c9f3c7affb461387520a407a6f45a2fd147e1230371ce241acc5"
+    },
+    {
+      "path": "results/codec_byte_breakdown.csv",
+      "bytes": 17608,
+      "sha256": "e680fac27a2a8b7c0c5f4076a01e6840736b08dd09b8a02fe0d9f511b5ac5a78"
+    },
+    {
+      "path": "results/compaction_per_scene.csv",
+      "bytes": 24667,
+      "sha256": "411a3bfa290f0194de92fd804e4f5211c319afb729f505db803625f7c0efbc49"
+    },
+    {
+      "path": "results/fixed_cohort_graph_tables.csv",
+      "bytes": 5968,
+      "sha256": "de74515ee7ef56a55d7be8342db418aa17c6b08508af551a52045db918d4f3dc"
+    },
+    {
+      "path": "results/native_comparison_per_scene.csv",
+      "bytes": 10435,
+      "sha256": "2ebe5e64660b36a2fff44e1fbe45a61b3828160945e9d95f8765ff0bd771907c"
+    },
+    {
+      "path": "results/preservation_per_scene.csv",
+      "bytes": 16205,
+      "sha256": "9be68a4eeae130f43dfe5d36240f8adab28308a564cdfdb7dcf862713cf96cff"
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "bytes": 54,
+      "sha256": "b50d449ac11fc954bcbb95d61f469ff45edf155d54d107125bc947e0a9d537ac"
+    },
+    {
+      "path": "setup.py",
+      "bytes": 3993,
+      "sha256": "0d34f80b08d10a866d754d31bd7746cb8bd17d97171d143b034c054c16368cc2"
+    },
+    {
+      "path": "tests/test_release_cli.py",
+      "bytes": 3161,
+      "sha256": "0423580194fea72e3920f1bc3aa4991466315ce799685cb80f51703972a307ef"
+    },
+    {
+      "path": "tools/tmc2/bootstrap.sh",
+      "bytes": 2539,
+      "sha256": "a026523af8a8bf94ccc8c785fdf69f9d3979c6821e1dbc342f2cc315eaeb2dfe"
+    },
+    {
+      "path": "tools/tmc2/patches-hm/0001-gcc13-class-memaccess.patch",
+      "bytes": 900,
+      "sha256": "b3ed9a7183fff2087da5f93c79ac50a026560970713d4fd09025be0f1f27eb70"
+    },
+    {
+      "path": "tools/tmc2/patches-hm/0002-modern-gcc-warnings.patch",
+      "bytes": 884,
+      "sha256": "0457381c92c19a05a405078a1e0a9fb667c2c2cc305443a9f417df3d71e883d4"
+    },
+    {
+      "path": "tools/tmc2/patches/0001-gcc13-cstdint.patch",
+      "bytes": 409,
+      "sha256": "f13406f98e936574bf5b25284270272a8848157e3aff7a81a58fba90784718e7"
+    },
+    {
+      "path": "tools/tmc2/patches/0002-hmlib-only-profile-guard.patch",
+      "bytes": 877,
+      "sha256": "12835e22306aa57727e5d38f842ce2b392edc24212ab34b41d37c135920f00a8"
+    },
+    {
+      "path": "tools/tmc2/patches/0003-hmlib-codec-index.patch",
+      "bytes": 588,
+      "sha256": "325ef439625c79f8ea5cc2d3e61ff649725e4f75a49cf98d3cfb736d4001da09"
+    },
+    {
+      "path": "tools/tmc2/patches/0004-remove-obsolete-lossless-attribute-option.patch",
+      "bytes": 598,
+      "sha256": "84a56cb01561707cdf4bd4ebd36c9adea24462faf3e7f53ca33c75e8a01ce775"
+    },
+    {
+      "path": "tools/tmc2/patches/0005-declare-standalone-hm-dependency.patch",
+      "bytes": 417,
+      "sha256": "817bcd48cd1c6d038922babb61cb9792e573050df0c2a473409e267f4834436b"
+    },
+    {
+      "path": "tools/tmc2/patches/0006-export-patch-mapping.patch",
+      "bytes": 1920,
+      "sha256": "683113ea9e6718b87128c2eb064081b6b5937ec662b8e957fb492a165d2faa1b"
+    }
+  ]
+}

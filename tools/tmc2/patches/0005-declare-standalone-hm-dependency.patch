@@ -1,0 +1,9 @@
+diff --git a/dependencies/cmake/hm_app.cmake b/dependencies/cmake/hm_app.cmake
+new file mode 100644
+index 0000000..69956dc
+--- /dev/null
++++ b/dependencies/cmake/hm_app.cmake
+@@ -0,0 +1,3 @@
++# HMAPP is built from the already pinned and patched HM dependency by
++# tools/tmc2/bootstrap.sh. TMC2 invokes those applications at runtime.
++message(STATUS "HM application codec enabled; applications are built separately")

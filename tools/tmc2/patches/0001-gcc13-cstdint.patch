@@ -1,0 +1,11 @@
+diff --git a/source/lib/PccLibConformance/include/PCCConformance.h b/source/lib/PccLibConformance/include/PCCConformance.h
+index d726d9b..c85e2bb 100644
+--- a/source/lib/PccLibConformance/include/PCCConformance.h
++++ b/source/lib/PccLibConformance/include/PCCConformance.h
+@@ -34,5 +34,6 @@
+ #define PCCConformanceParser_h
+ 
++#include <cstdint>
+ #include <functional>
+ #include <iostream>
+ #include <sstream>

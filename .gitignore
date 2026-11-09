@@ -1,0 +1,15 @@
+/target/
+/outputs/
+/runs/
+/models/
+/data/
+/e19.local.json
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.log

@@ -1,0 +1,8 @@
+[package]
+name = "vpcc_decoder"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+discord_bot = { path = "../../crates/discord_bot" }
+gaussian_packing = { path = "../../crates/gaussian_packing" }

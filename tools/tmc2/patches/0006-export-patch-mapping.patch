@@ -1,0 +1,34 @@
+diff --git a/source/lib/PccLibDecoder/source/PCCDecoder.cpp b/source/lib/PccLibDecoder/source/PCCDecoder.cpp
+index 16e6495..6f0c500 100644
+--- a/source/lib/PccLibDecoder/source/PCCDecoder.cpp
++++ b/source/lib/PccLibDecoder/source/PCCDecoder.cpp
+@@ -483,5 +483,29 @@ int PCCDecoder::decode( PCCContext& context, PCCGroupOfFrames& reconstructs, in
+     for ( auto& c : checksum ) { TRACE_RECFRAME( "%02x", c ); }
+     TRACE_RECFRAME( "\n" );
+   }
++  // Optional research export: retain the atlas coordinate and patch identity
++  // generated during V-PCC reconstruction. This has no effect unless the
++  // caller sets PCC_EXPORT_PATCH_MAP to a CSV destination.
++  if ( const char* exportPath = std::getenv( "PCC_EXPORT_PATCH_MAP" ) ) {
++    std::ofstream mapping( exportPath );
++    mapping << "frame,point,x,y,z,patch,u,v,layer\n";
++    for ( size_t frameIdx = 0; frameIdx < frameCount; ++frameIdx ) {
++      const auto& reconstruct  = reconstructs[frameIdx];
++      const auto& pointToPixel = context[frameIdx].getTitleFrameContext().getPointToPixel();
++      if ( pointToPixel.size() != reconstruct.getPointCount() ) {
++        std::cerr << "PCC_EXPORT_PATCH_MAP skipped frame " << frameIdx
++                  << ": point-to-pixel count " << pointToPixel.size()
++                  << " differs from reconstructed count " << reconstruct.getPointCount() << std::endl;
++        continue;
++      }
++      for ( size_t pointIdx = 0; pointIdx < reconstruct.getPointCount(); ++pointIdx ) {
++        const auto& point    = reconstruct[pointIdx];
++        const auto& pixel    = pointToPixel[pointIdx];
++        const auto  patch    = reconstruct.getPointPatchIndex( pointIdx );
++        mapping << frameIdx << ',' << pointIdx << ',' << point[0] << ',' << point[1] << ',' << point[2] << ','
++                << patch.second << ',' << pixel[0] << ',' << pixel[1] << ',' << pixel[2] << '\n';
++      }
++    }
++  }
+   return 0;
+ }

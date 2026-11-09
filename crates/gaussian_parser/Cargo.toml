@@ -1,0 +1,13 @@
+[package]
+name = "gaussian_parser"
+version = "0.1.0"
+edition = "2024"
+description = "Kerbl-style 3D Gaussian Splatting PLY parser (binary LE + ASCII)"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+gaussian_types = { workspace = true, features = ["serde"] }
+serde = { workspace = true, features = ["derive"] }
+thiserror = { workspace = true }

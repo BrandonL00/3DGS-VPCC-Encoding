@@ -1,0 +1,32 @@
+{
+  "ffsplat_url": "https://github.com/w-m/ffsplat.git",
+  "ffsplat_commit": "3fb6444c5faed6de9aa55fa2313df6c2a4104193",
+  "python": "3.12.3",
+  "torch_cuda": "13.0",
+  "torch_architectures": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "tested_gpu": "NVIDIA GeForce RTX 5070",
+  "packages": {
+    "torch": "2.11.0",
+    "torchvision": "0.26.0",
+    "numpy": "2.5.3",
+    "cupy-cuda13x": "14.2.0",
+    "torchpq": "0.3.0.6",
+    "pillow": "11.3.0",
+    "pillow-heif": "0.22.0",
+    "plyfile": "1.1.5",
+    "gsplat": "1.4.0"
+  },
+  "files": {
+    "pyproject.toml": "96eca9b95ab05f1a4f215b7fa055c287620703dbf3d9d53b2a891ce4d8590246",
+    "uv.lock": "6bf09752919f15168a181a0bbb5be66f89aa3bf222cf8157af5519557dd2cb5b",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "note": "Upstream source plus captured dependency metadata overlay; no source patches. No environments are bundled."
+}

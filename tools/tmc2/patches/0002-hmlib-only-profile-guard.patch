@@ -1,0 +1,15 @@
+diff --git a/source/lib/PccLibEncoder/source/PCCEncoderParameters.cpp b/source/lib/PccLibEncoder/source/PCCEncoderParameters.cpp
+index 3b2ed16..6c9aa5e 100644
+--- a/source/lib/PccLibEncoder/source/PCCEncoderParameters.cpp
++++ b/source/lib/PccLibEncoder/source/PCCEncoderParameters.cpp
+@@ -1205,9 +1205,9 @@ bool PCCEncoderParameters::check() {
+         videoEncoderGeometryCodecId_  = HMAPP;
+         videoEncoderAttributeCodecId_ = HMAPP;
+       }
+-#elif defined( USE_HMAPP_VIDEO_CODEC )
++#elif defined( USE_HMLIB_VIDEO_CODEC )
+       if ( ( videoEncoderOccupancyCodecId_ != HMLIB ) || ( videoEncoderGeometryCodecId_ != HMLIB ) ||
+            ( videoEncoderAttributeCodecId_ != HMLIB ) ) {
+         std::cerr << "profileCodecGroupIdc_ is HEVC444 or HEVCMAIN10 force codecId. \n";
+         videoEncoderOccupancyCodecId_ = HMLIB;
+         videoEncoderGeometryCodecId_  = HMLIB;

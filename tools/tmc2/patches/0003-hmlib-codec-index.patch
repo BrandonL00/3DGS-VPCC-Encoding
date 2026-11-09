@@ -1,0 +1,13 @@
+diff --git a/source/lib/PccLibEncoder/source/PCCEncoderParameters.cpp b/source/lib/PccLibEncoder/source/PCCEncoderParameters.cpp
+index 6c9aa5e..3fd43c8 100644
+--- a/source/lib/PccLibEncoder/source/PCCEncoderParameters.cpp
++++ b/source/lib/PccLibEncoder/source/PCCEncoderParameters.cpp
+@@ -1300,7 +1300,7 @@ uint8_t PCCEncoderParameters::getCodecIdIndex( PCCCodecId codecId ) {
+     case FFMPEG:
+ #endif
+ #ifdef USE_HMLIB_VIDEO_CODEC
+-    case HMLIB:
++    case HMLIB: return hevcCodecIdIndex_; break;
+ #endif
+ #ifdef USE_HMAPP_VIDEO_CODEC
+     case HMAPP: return hevcCodecIdIndex_; break;

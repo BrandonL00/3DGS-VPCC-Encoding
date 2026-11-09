@@ -1,0 +1,16 @@
+name: Source checks
+on: [push, pull_request]
+jobs:
+  cpu-checks:
+    runs-on: ubuntu-24.04
+    env:
+      VPCC_DISCORD_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launcher configuration tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Rust unit tests
+        run: cargo test --locked -p tmc2_adapter
+      - name: Python syntax
+        run: python3 -m compileall -q e19.py setup.py pipeline examples tests
+# CUDA smoke tests require an NVIDIA runner and are documented in VALIDATION.md.
