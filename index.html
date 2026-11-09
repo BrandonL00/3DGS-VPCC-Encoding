@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f2ed">
+  <title>E19 · Interactive reconstructions</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="./">E19<span> / </span>3DGS + V-PCC</a><a href="https://github.com/BrandonL00/3DGS-VPCC-Encoding">Code ↗</a></header>
+  <main>
+    <div class="heading"><p class="eyebrow">INTERACTIVE PAPER COMPANION</p><h1>Explore the reconstruction.</h1><p class="intro">Move through the decoded results of our compaction and compression pipeline.</p></div>
+    <section class="viewer" aria-label="Interactive Gaussian scene">
+      <div class="toolbar">
+        <div class="scene-name"><span class="dot"></span>Bicycle <span class="muted">/ Mip-NeRF 360</span></div>
+        <div class="tools"><label for="budget">Compaction target</label><select id="budget" disabled><option>Loading…</option></select><button id="reset" title="Return to the starting view">Reset view</button><button id="fullscreen" title="Toggle fullscreen">Fullscreen</button></div>
+      </div>
+      <div class="stage" id="stage">
+        <img class="poster" id="poster" src="./poster.png" alt="Bicycle reconstruction preview">
+        <canvas id="canvas" aria-label="Drag to orbit. Right drag to pan. Scroll to zoom." tabindex="0"></canvas>
+        <div id="loading" class="loading" role="status" aria-live="polite"><strong id="load-title">Starting viewer</strong><span id="load-detail">Checking browser graphics…</span><progress id="progress" max="1" value="0"></progress></div>
+        <span class="view-tag">C18.3 + E19 <span id="active-label">64k</span></span>
+      </div>
+      <div class="viewer-footer"><span>Drag to orbit · Right-drag to pan · Scroll to zoom · Pinch on touch</span><a id="download" aria-disabled="true">Download decoded PLY ↓</a></div>
+    </section>
+    <section class="stats" aria-label="Selected artifact details">
+      <div><span class="stat-label">Decoded Gaussians</span><strong id="count">—</strong></div>
+      <div><span class="stat-label">E19 encoded package</span><strong id="encoded">—</strong></div>
+      <div><span class="stat-label">PLY download</span><strong id="ply-size">—</strong></div>
+      <div><span class="stat-label">Source-render PSNR / VMAF</span><strong id="quality">—</strong></div>
+    </section>
+    <div class="notes"><p>These are the actual decoded PLYs from the combined <strong>C18.3 + E19</strong> experiment. The camera stays in place when you switch compaction targets.</p><p>The browser renders the reconstructed scenes; it does not run our encoder. The PLY download size differs from the E19 compressed package size. Quality scores are averages from the canonical benchmark, not measurements of this browser view.</p></div>
+    <details><summary>Artifact provenance &amp; viewing notes</summary><p>All source PLY attributes are retained in the downloadable files. Byte chunks are reassembled without conversion or additional quantization and checked against their SHA-256 hashes. The 64k, 256k and 1.024M labels are requested compaction targets; square-grid fitting slightly reduces the final counts. Browser rendering can differ from the paper's GraphDECO renderer.</p><p>The 1.024M result downloads about 253 MB and needs more GPU memory. The full original scene is not included in this initial gallery. Artifact identities are recorded in <a href="./artifacts.json">the manifest</a>.</p><p>Viewer: PlayCanvas 2.23.3, MIT licensed. <a href="./vendor/PLAYCANVAS-LICENSE">Engine license</a> · <a href="./LICENSE">Project license</a>.</p></details>
+  </main>
+  <footer>Reconstructed scenes. Interactive inspection.</footer>
+  <script type="module" src="./viewer.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+{
+  "schema": "e19-paper-viewer.v1",
+  "scene": "Bicycle",
+  "camera": {
+    "position": [
+      3.0026817933840073,
+      -1.4007726437615275,
+      -2.2284005560263305
+    ],
+    "target": [
+      0.6896479316160482,
+      -1.153292489214972,
+      -0.33403313458443584
+    ],
+    "up": [
+      -0.03804422066319289,
+      0.9838365806164537,
+      -0.17498062725643193
+    ],
+    "fov": 39.09650632438253,
+    "benchmarkView": "Bicycle Mip-NeRF 360 llffhold=8 01 (_DSC8679)"
+  },
+  "engine": "PlayCanvas 2.23.3",
+  "artifacts": [
+    {
+      "id": "64k",
+      "label": "64k",
+      "count": 63504,
+      "targetCount": 64000,
+      "encodedBytes": 984213,
+      "plyBytes": 15750522,
+      "sha256": "b71ccd7c2c807008c9f975282e633d00adf79d8e9439c444bb79753deddc65b5",
+      "chunks": [
+        {
+          "url": "artifacts/bicycle-64k/part-000.bin",
+          "bytes": 15750522,
+          "sha256": "b71ccd7c2c807008c9f975282e633d00adf79d8e9439c444bb79753deddc65b5"
+        }
+      ],
+      "sourcePsnr": 24.294183142234086,
+      "sourceVmaf": 68.18058,
+      "encoder": "E19",
+      "compaction": "C18.3"
+    },
+    {
+      "id": "256k",
+      "label": "256k",
+      "count": 255025,
+      "targetCount": 256000,
+      "encodedBytes": 3757647,
+      "plyBytes": 63247731,
+      "sha256": "44e5b1092f01af9d557711520889124f3334ea595b5df42e805508f34a611434",
+      "chunks": [
+        {
+          "url": "artifacts/bicycle-256k/part-000.bin",
+          "bytes": 50331648,
+          "sha256": "cf2958ef4d4318deaf5baff6bfb305ccf363f067a1ca55ffbc0134586861f59a"
+        },
+        {
+          "url": "artifacts/bicycle-256k/part-001.bin",
+          "bytes": 12916083,
+          "sha256": "dd50efccac03bb788f4f1d2d9c2a613a47eaee9b0d0694fe03351189106730ba"
+        }
+      ],
+      "sourcePsnr": 26.463220468508815,
+      "sourceVmaf": 75.782986,
+      "encoder": "E19",
+      "compaction": "C18.3"
+    },
+    {
+      "id": "1024k",
+      "label": "1.024M",
+      "count": 1022121,
+      "targetCount": 1024000,
+      "encodedBytes": 13676101,
+      "plyBytes": 253487540,
+      "sha256": "4e066666b68caff2f7cf26ad392ed762d30c1a86337af3c007ae705bffb5c6fe",
+      "chunks": [
+        {
+          "url": "artifacts/bicycle-1024k/part-000.bin",
+          "bytes": 50331648,
+          "sha256": "a27ab29a9a14e0508a8dd7ec90b1e9d394d1dc72341cb4df1734252b5869aec7"
+        },
+        {
+          "url": "artifacts/bicycle-1024k/part-001.bin",
+          "bytes": 50331648,
+          "sha256": "5c6df1fa70bcdf926021854b70d8f981ee429cb8695cee924fa1aa1c244af88f"
+        },
+        {
+          "url": "artifacts/bicycle-1024k/part-002.bin",
+          "bytes": 50331648,
+          "sha256": "7d0d8fcf15d7274bbed7ee73eb238b293a0985ecc15c9ecf6e4423642e10a721"
+        },
+        {
+          "url": "artifacts/bicycle-1024k/part-003.bin",
+          "bytes": 50331648,
+          "sha256": "99e5b1501090da7828b9ffef36324abf2975fac226a224bc7c4925236b062c42"
+        },
+        {
+          "url": "artifacts/bicycle-1024k/part-004.bin",
+          "bytes": 50331648,
+          "sha256": "26259cc2de5c7d4b10559055be872b8439b37b4b9c8ce6fc3bb67b4b97136b80"
+        },
+        {
+          "url": "artifacts/bicycle-1024k/part-005.bin",
+          "bytes": 1829300,
+          "sha256": "b42e07abf1b22351dd0f5bbe10119e833619e12d63228e9d1dc74abc575ad156"
+        }
+      ],
+      "sourcePsnr": 27.871633954581558,
+      "sourceVmaf": 81.08075,
+      "encoder": "E19",
+      "compaction": "C18.3"
+    }
+  ]
+}
