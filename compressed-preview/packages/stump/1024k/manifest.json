@@ -1,0 +1,54 @@
+{
+  "mode": "v18_vpcc_signed_log_morton_sog_hybrid",
+  "records": 1022121,
+  "vpcc_anchors": 184711,
+  "vpcc_geometry_bitdepth": 8,
+  "low_coordinate_bits": 8,
+  "vpcc_stream": "stream.bin",
+  "semantic_dir": "semantic_sog",
+  "omitted_sog_means": [
+    "means_bytes_0.avif",
+    "means_bytes_1.avif"
+  ],
+  "association": "association.deflate",
+  "low_bits_transform": "quantized_8bit_residual",
+  "transform": {
+    "method": "sog_signed_log1p_global_range",
+    "geometry_bitdepth": 16,
+    "quantized_max": 65535,
+    "source_min": [
+      -153.54141235351562,
+      -118.77926635742188,
+      -132.13067626953125
+    ],
+    "source_max": [
+      123.86177825927734,
+      69.32514190673828,
+      78.23255920410156
+    ],
+    "source_longest_extent": 277.40319061279297,
+    "scale_to_quantized": 6641.38582179606,
+    "inverse_scale_to_source": 0.00015057098425424193,
+    "inverse_formula": "source_xyz = signed_expm1(quantized_xyz / scale_to_quantized + coordinate_domain_min)",
+    "signed_log_coordinates": true,
+    "coordinate_domain_min": -5.040462101544275,
+    "coordinate_domain_max": 4.827207351557468
+  },
+  "payload_bytes": 13806911,
+  "low_bits_layout": "bitplanes",
+  "low_bitplanes": [
+    "low_plane_0.deflate",
+    "low_plane_1.deflate",
+    "low_plane_2.deflate",
+    "low_plane_3.deflate",
+    "low_plane_4.deflate",
+    "low_plane_5.deflate",
+    "low_plane_6.deflate",
+    "low_plane_7.deflate"
+  ],
+  "encoder_version": "19",
+  "encoder_preset": "compact",
+  "requested_preset": "compact",
+  "compaction_version": "18.3",
+  "compaction_manifest": "/mnt/d/3dgs_VPCC_Encoding_Runs/e19_preservation_compaction_curves_oct23/compact_stump_1024k/compaction_run/compaction_manifest.json"
+}

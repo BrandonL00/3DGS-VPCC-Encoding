@@ -1,0 +1,7 @@
+* -text
+*.bin binary
+*.wasm binary
+*.avif binary
+*.deflate binary
+*.ply binary
+*.png binary

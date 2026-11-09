@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f2ed">
+  <title>E19 · Interactive reconstructions</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="./">E19<span> / </span>3DGS + V-PCC</a><a href="https://github.com/BrandonL00/3DGS-VPCC-Encoding">Code ↗</a></header>
+  <main>
+    <div class="heading"><p class="eyebrow">EXPERIMENTAL · COMPRESSED-PACKAGE VIEWER</p><h1>Explore the reconstruction.</h1><p class="intro">Move through our decoded results. Desktop preview; browser smoke testing is pending.</p></div>
+    <section class="viewer" aria-label="Interactive Gaussian scene">
+      <div class="toolbar">
+        <div class="scene-name"><span class="dot"></span><label for="scene">Scene</label><select id="scene" disabled><option>Bicycle</option></select><span class="muted">/ Mip-NeRF 360</span></div>
+        <div class="tools"><label for="budget">Compaction target</label><select id="budget" disabled><option>Loading…</option></select><button id="reset" title="Return to the starting view">Reset view</button><button id="fullscreen" title="Toggle fullscreen">Fullscreen</button></div>
+      </div>
+      <div class="stage" id="stage">
+        <img class="poster" id="poster" src="./poster.png" alt="Bicycle reconstruction preview">
+        <canvas id="canvas" aria-label="Drag to orbit. Right drag to pan. Scroll to zoom." tabindex="0"></canvas>
+        <div id="loading" class="loading" role="status" aria-live="polite"><strong id="load-title">Starting viewer</strong><span id="load-detail">Checking browser graphics…</span><progress id="progress" max="1" value="0"></progress></div>
+        <span class="view-tag">C18.3 + E19 <span id="active-label">64k</span></span>
+      </div>
+      <div class="viewer-footer"><span>Drag to orbit · Right-drag to pan · Scroll to zoom · Pinch on touch</span><a id="download" aria-disabled="true">Download decoded PLY ↓</a></div>
+    </section>
+    <section class="stats" aria-label="Selected artifact details">
+      <div><span class="stat-label">Decoded Gaussians</span><strong id="count">—</strong></div>
+      <div><span class="stat-label">E19 encoded package</span><strong id="encoded">—</strong></div>
+      <div><span class="stat-label">Scene download</span><strong id="ply-size">—</strong></div>
+      <div><span class="stat-label">Source-render PSNR / VMAF</span><strong id="quality">—</strong></div>
+    </section>
+    <div class="notes"><p>These are reconstructions from the actual combined <strong>C18.3 + E19</strong> experiment. The camera stays in place when you switch budgets and resets when you choose another scene.</p><p id="delivery-note">The browser downloads our compressed packages and reconstructs them locally using WebAssembly. Quality scores are averages from the canonical benchmark, not measurements of this browser view.</p></div>
+    <details><summary>Artifact provenance &amp; viewing notes</summary><p>The 64k, 128k, 256k, 512k and 1.024M labels are requested compaction targets; square-grid fitting slightly reduces the final populations. The decoder restores V-PCC anchors, residuals, AVIF attributes and SH codebooks without applying another quantization step. Browser rendering can differ from the paper's GraphDECO renderer.</p><p>Scene downloads include decoding metadata; the shared decoder runtime is loaded separately. Decoding currently needs roughly 1 GB of CPU memory in addition to rendering memory. Full original scenes are outside this gallery. Artifact identities are recorded in <a href="./artifacts.json">the manifest</a>.</p><p>Viewer: PlayCanvas 2.23.3, MIT licensed. <a href="./vendor/PLAYCANVAS-LICENSE">Engine license</a> · <a href="./LICENSE">Project license</a>. The native codec and AVIF decoder retain their upstream notices.</p></details>
+  </main>
+  <footer>Reconstructed scenes. Interactive inspection.</footer>
+  <script type="module" src="./viewer.js"></script>
+</body>
+</html>

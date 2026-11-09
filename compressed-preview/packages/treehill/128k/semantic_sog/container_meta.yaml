@@ -1,0 +1,188 @@
+container_identifier: smurfx
+container_version: '0.1'
+packer: ffsplat-0.1
+profile: SOG-web-morton-kiss-plas-tile1
+profile_version: 0.1
+meta: {}
+ops:
+  - input_fields: []
+    transforms:
+      - read_file:
+          file_path: f_rest_centroids.avif
+          type: image
+          image_codec: avif
+          field_name: f_rest_centroids
+  - input_fields: [f_rest_centroids]
+    transforms:
+      - reshape:
+          shape: [3, 120, 5, 120, 3]
+      - permute:
+          dims: [1, 3, 4, 0, 2]
+      - reshape:
+          shape: [14400, 45]
+  - input_fields: []
+    transforms:
+      - read_file:
+          file_path: opacities.avif
+          type: image
+          image_codec: avif
+          field_name: opacities
+      - read_file:
+          file_path: scales.avif
+          type: image
+          image_codec: avif
+          field_name: scales
+      - read_file:
+          file_path: means_bytes_0.avif
+          type: image
+          image_codec: avif
+          field_name: means_bytes_0
+      - read_file:
+          file_path: means_bytes_1.avif
+          type: image
+          image_codec: avif
+          field_name: means_bytes_1
+      - read_file:
+          file_path: quaternions.avif
+          type: image
+          image_codec: avif
+          field_name: quaternions
+      - read_file:
+          file_path: f_dc.avif
+          type: image
+          image_codec: avif
+          field_name: f_dc
+      - read_file:
+          file_path: f_rest_labels_bytes_0.avif
+          type: image
+          image_codec: avif
+          field_name: f_rest_labels_bytes_0
+      - read_file:
+          file_path: f_rest_labels_bytes_1.avif
+          type: image
+          image_codec: avif
+          field_name: f_rest_labels_bytes_1
+  - input_fields: [opacities]
+    transforms:
+      - simple_quantize:
+          min_values: [-3.0917670726776123]
+          max_values: [8.78527545928955]
+          dim: 2
+          dtype: float32
+          round_to_int: false
+      - remapping:
+          method: sigmoid
+      - flatten:
+          start_dim: 0
+          end_dim: 1
+  - input_fields: [scales]
+    transforms:
+      - simple_quantize:
+          min_values: [-9.705423355102539, -10.222737312316895, -9.969385147094727]
+          max_values: [2.980398178100586, 3.415186643600464, 2.6336262226104736]
+          dim: 2
+          dtype: float32
+          round_to_int: false
+      - remapping:
+          method: exp
+      - flatten:
+          start_dim: 0
+          end_dim: 1
+  - input_fields: [quaternions]
+    transforms:
+      - simple_quantize:
+          min_values: [-0.01655075140297413, -0.9332976937294006, -0.8332887291908264,
+            -0.7763857841491699]
+          max_values: [1.9452396631240845, 0.7911062836647034, 0.9066862463951111,
+            0.9445086717605591]
+          dim: 2
+          dtype: float32
+          round_to_int: false
+      - flatten:
+          start_dim: 0
+          end_dim: 1
+  - input_fields: [f_rest_labels_bytes_0, f_rest_labels_bytes_1]
+    transforms:
+      - combine:
+          method: bytes
+          to_field: f_rest_labels
+  - input_fields: [f_rest_labels]
+    transforms:
+      - simple_quantize:
+          min_values: [0]
+          max_values: [14399]
+          dim: 2
+          dtype: float32
+          round_to_int: false
+      - flatten:
+          start_dim: 0
+          end_dim: 1
+  - input_fields: [f_rest_centroids]
+    transforms:
+      - simple_quantize:
+          min_values: [-0.3559420108795166]
+          max_values: [0.35466769337654114]
+          dim: 2
+          dtype: float32
+          round_to_int: false
+  - input_fields: [f_rest_labels, f_rest_centroids]
+    transforms:
+      - lookup:
+          labels: f_rest_labels
+          table: f_rest_centroids
+          to_field: f_rest
+  - input_fields: [f_rest]
+    transforms:
+      - reshape:
+          start_dim: 1
+          shape: [3, 15]
+      - permute:
+          dims: [0, 2, 1]
+  - input_fields: [f_dc]
+    transforms:
+      - flatten:
+          start_dim: 0
+          end_dim: 1
+      - simple_quantize:
+          min_values: [-2.1765506267547607, -2.10439395904541, -2.2285754680633545]
+          max_values: [10.008321762084961, 9.708909034729004, 10.50461483001709]
+          dim: 1
+          dtype: float32
+          round_to_int: false
+      - reshape:
+          start_dim: 1
+          shape: [1, 3]
+  - input_fields: [means_bytes_1]
+    transforms:
+      - flatten:
+          start_dim: 0
+          end_dim: 1
+  - input_fields: [means_bytes_0]
+    transforms:
+      - flatten:
+          start_dim: 0
+          end_dim: 1
+  - input_fields: [means_bytes_0, means_bytes_1]
+    transforms:
+      - combine:
+          method: bytes
+          to_field: means
+  - input_fields: [means]
+    transforms:
+      - simple_quantize:
+          min_values: [-4.523002624511719]
+          max_values: [4.962766170501709]
+          dim: 2
+          dtype: float32
+          round_to_int: false
+      - remapping:
+          method: signed-exp
+  - input_fields: [f_dc, f_rest]
+    transforms:
+      - combine:
+          method: concat
+          dim: 1
+          to_field: sh
+scene:
+  primitives: 3DGS-INRIA
+  params: [means, scales, opacities, quaternions, sh]

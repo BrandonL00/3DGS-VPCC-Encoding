@@ -1,0 +1,1497 @@
+{
+  "state": "complete",
+  "total": 45,
+  "completed": 45,
+  "failed": 0,
+  "results": [
+    {
+      "id": "bicycle_64k",
+      "ok": true,
+      "records": 63504,
+      "milliseconds": 1499.3986570000002,
+      "wasmMemoryBytes": 929431552,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.8312206268310547e-07,
+          "rmse": 8.877771152213731e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 3.013584798860864e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "bicycle_128k",
+      "ok": true,
+      "records": 127449,
+      "milliseconds": 1670.7872790000001,
+      "wasmMemoryBytes": 929562624,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 1.9085713576323362e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 3.777811127943202e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "bicycle_256k",
+      "ok": true,
+      "records": 255025,
+      "milliseconds": 2399.8296490000002,
+      "wasmMemoryBytes": 929628160,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 2.015593565987509e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 6.42757041347852e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "bicycle_512k",
+      "ok": true,
+      "records": 511225,
+      "milliseconds": 3458.589739,
+      "wasmMemoryBytes": 929759232,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 6.965288462479535e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 2.7721328711993025e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "bicycle_1024k",
+      "ok": true,
+      "records": 1022121,
+      "milliseconds": 4829.384756,
+      "wasmMemoryBytes": 929890304,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.9802322387695312e-08,
+          "rmse": 6.709935141116161e-09
+        },
+        "scale": {
+          "maxAbs": 6.332993507385254e-08,
+          "rmse": 1.5696344487108418e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "bonsai_64k",
+      "ok": true,
+      "records": 63504,
+      "milliseconds": 1173.6300290000001,
+      "wasmMemoryBytes": 929366016,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 2.483752118633952e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 4.706397415075465e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "bonsai_128k",
+      "ok": true,
+      "records": 127449,
+      "milliseconds": 1518.3247549999999,
+      "wasmMemoryBytes": 929431552,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 4.001211227070937e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 2.5999665431277485e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "bonsai_256k",
+      "ok": true,
+      "records": 255025,
+      "milliseconds": 1989.855548,
+      "wasmMemoryBytes": 929562624,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 3.039253900492564e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 2.4027887113986946e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "bonsai_512k",
+      "ok": true,
+      "records": 511225,
+      "milliseconds": 3180.730605,
+      "wasmMemoryBytes": 929628160,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 5.79940479551486e-08
+        },
+        "scale": {
+          "maxAbs": 2.9802322387695312e-08,
+          "rmse": 6.266113919133451e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "bonsai_1024k",
+      "ok": true,
+      "records": 1022121,
+      "milliseconds": 4731.371515,
+      "wasmMemoryBytes": 929890304,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 5.960464477539062e-07,
+          "rmse": 3.5887819854482644e-08
+        },
+        "scale": {
+          "maxAbs": 8.940696716308594e-08,
+          "rmse": 1.4824546510528274e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "counter_64k",
+      "ok": true,
+      "records": 63504,
+      "milliseconds": 1323.3293569999998,
+      "wasmMemoryBytes": 929366016,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 4.8109719112210384e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 3.876897794862294e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "counter_128k",
+      "ok": true,
+      "records": 127449,
+      "milliseconds": 1456.548017,
+      "wasmMemoryBytes": 929366016,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 1.538816341296478e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 2.3113908043029485e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "counter_256k",
+      "ok": true,
+      "records": 255025,
+      "milliseconds": 2049.5839429999996,
+      "wasmMemoryBytes": 929497088,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 1.3774608766132859e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 1.4663521745492568e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "counter_512k",
+      "ok": true,
+      "records": 511225,
+      "milliseconds": 2970.294549,
+      "wasmMemoryBytes": 929562624,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 4.161687796862928e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 1.3615411797354731e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "counter_1024k",
+      "ok": true,
+      "records": 1022121,
+      "milliseconds": 4254.063952,
+      "wasmMemoryBytes": 929628160,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 7.674928519332087e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 2.2838002319377995e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "flowers_64k",
+      "ok": true,
+      "records": 63504,
+      "milliseconds": 1232.900791,
+      "wasmMemoryBytes": 929431552,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 9.355694277697531e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 3.910945050462404e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "flowers_128k",
+      "ok": true,
+      "records": 127449,
+      "milliseconds": 1532.251859,
+      "wasmMemoryBytes": 929497088,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 3.5294115133462176e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 2.995792676296476e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "flowers_256k",
+      "ok": true,
+      "records": 255025,
+      "milliseconds": 2112.445779,
+      "wasmMemoryBytes": 929562624,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 9.5367431640625e-07,
+          "rmse": 8.139737873387576e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 2.581392530926659e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "flowers_512k",
+      "ok": true,
+      "records": 511225,
+      "milliseconds": 3256.4928029999996,
+      "wasmMemoryBytes": 929759232,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 2.902183871646699e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 3.0089563580212022e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "flowers_1024k",
+      "ok": true,
+      "records": 1022121,
+      "milliseconds": 4929.0814,
+      "wasmMemoryBytes": 929890304,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 3.457668199061415e-08
+        },
+        "scale": {
+          "maxAbs": 6.705522537231445e-08,
+          "rmse": 1.5742270420351816e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "garden_64k",
+      "ok": true,
+      "records": 63504,
+      "milliseconds": 1277.735975,
+      "wasmMemoryBytes": 929366016,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 9.5367431640625e-07,
+          "rmse": 2.449357132273602e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 4.183394718263465e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "garden_128k",
+      "ok": true,
+      "records": 127449,
+      "milliseconds": 1490.732986,
+      "wasmMemoryBytes": 929366016,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 3.5946577371996176e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 2.6782839237978774e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "garden_256k",
+      "ok": true,
+      "records": 255025,
+      "milliseconds": 2091.960338,
+      "wasmMemoryBytes": 929431552,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 3.1838862725706417e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 6.637640113230756e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "garden_512k",
+      "ok": true,
+      "records": 511225,
+      "milliseconds": 3037.377686,
+      "wasmMemoryBytes": 929497088,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 5.0950131481605915e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 1.2140390751640847e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "garden_1024k",
+      "ok": true,
+      "records": 1022121,
+      "milliseconds": 4670.995596,
+      "wasmMemoryBytes": 929497088,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 2.8615723093170435e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 4.309602345377261e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "kitchen_64k",
+      "ok": true,
+      "records": 63504,
+      "milliseconds": 1226.0452,
+      "wasmMemoryBytes": 929300480,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 6.672852789488492e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 6.457712905296633e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "kitchen_128k",
+      "ok": true,
+      "records": 127449,
+      "milliseconds": 1370.776388,
+      "wasmMemoryBytes": 929366016,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 9.5367431640625e-07,
+          "rmse": 6.802069677509864e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 9.965455105339119e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "kitchen_256k",
+      "ok": true,
+      "records": 255025,
+      "milliseconds": 2159.453735,
+      "wasmMemoryBytes": 929431552,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 2.7627167164510114e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 2.566465575153251e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "kitchen_512k",
+      "ok": true,
+      "records": 511225,
+      "milliseconds": 2817.301058,
+      "wasmMemoryBytes": 929497088,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 7.658160157019103e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 4.881021980138873e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "kitchen_1024k",
+      "ok": true,
+      "records": 1022121,
+      "milliseconds": 4367.366282,
+      "wasmMemoryBytes": 929562624,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 7.189762580878241e-09
+        },
+        "scale": {
+          "maxAbs": 1.1548399925231934e-07,
+          "rmse": 1.640673394849139e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "room_64k",
+      "ok": true,
+      "records": 63504,
+      "milliseconds": 1236.553756,
+      "wasmMemoryBytes": 929300480,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 4.5620320256429024e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 9.414938261796243e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "room_128k",
+      "ok": true,
+      "records": 127449,
+      "milliseconds": 1434.832901,
+      "wasmMemoryBytes": 929366016,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 9.5367431640625e-07,
+          "rmse": 9.040360348374787e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 2.192572588659273e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "room_256k",
+      "ok": true,
+      "records": 255025,
+      "milliseconds": 2205.3962460000002,
+      "wasmMemoryBytes": 929366016,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 1.8395681963568083e-08
+        },
+        "scale": {
+          "maxAbs": 8.940696716308594e-08,
+          "rmse": 7.541445431718222e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "room_512k",
+      "ok": true,
+      "records": 511225,
+      "milliseconds": 3032.582688,
+      "wasmMemoryBytes": 929497088,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 1.080655488651419e-08
+        },
+        "scale": {
+          "maxAbs": 7.450580596923828e-08,
+          "rmse": 8.865502666418553e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "room_1024k",
+      "ok": true,
+      "records": 1022121,
+      "milliseconds": 4401.426066,
+      "wasmMemoryBytes": 929562624,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 3.501959537568539e-08
+        },
+        "scale": {
+          "maxAbs": 8.940696716308594e-08,
+          "rmse": 6.972538363621065e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "stump_64k",
+      "ok": true,
+      "records": 63504,
+      "milliseconds": 1682.680087,
+      "wasmMemoryBytes": 929366016,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 9.5367431640625e-07,
+          "rmse": 6.329058460451321e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 6.620692144792598e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "stump_128k",
+      "ok": true,
+      "records": 127449,
+      "milliseconds": 1642.6231770000002,
+      "wasmMemoryBytes": 929562624,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 3.584668741325971e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 5.257799432019742e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "stump_256k",
+      "ok": true,
+      "records": 255025,
+      "milliseconds": 2643.270567,
+      "wasmMemoryBytes": 929562624,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 3.9477355006975635e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 1.3238181382921131e-08
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "stump_512k",
+      "ok": true,
+      "records": 511225,
+      "milliseconds": 3427.1350629999997,
+      "wasmMemoryBytes": 929759232,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 6.441691749862469e-08
+        },
+        "scale": {
+          "maxAbs": 8.940696716308594e-08,
+          "rmse": 4.343828269368156e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "stump_1024k",
+      "ok": true,
+      "records": 1022121,
+      "milliseconds": 4971.874707,
+      "wasmMemoryBytes": 929890304,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 1.9073486328125e-06,
+          "rmse": 1.1350269519897693e-07
+        },
+        "scale": {
+          "maxAbs": 6.705522537231445e-08,
+          "rmse": 4.991402384757929e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "treehill_64k",
+      "ok": true,
+      "records": 63504,
+      "milliseconds": 1342.1206690000001,
+      "wasmMemoryBytes": 929431552,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 5.4836273193359375e-06,
+          "rmse": 4.970137155500757e-07
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 4.7067227513271705e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "treehill_128k",
+      "ok": true,
+      "records": 127449,
+      "milliseconds": 1628.0306229999999,
+      "wasmMemoryBytes": 929562624,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 9.5367431640625e-07,
+          "rmse": 2.14808303595864e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 3.311602983172467e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "treehill_256k",
+      "ok": true,
+      "records": 255025,
+      "milliseconds": 2239.721505,
+      "wasmMemoryBytes": 929562624,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 4.2159076388254934e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 3.4782016307597313e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "treehill_512k",
+      "ok": true,
+      "records": 511225,
+      "milliseconds": 3477.764455,
+      "wasmMemoryBytes": 929759232,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 3.999207063305448e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 1.928439016421132e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "treehill_1024k",
+      "ok": true,
+      "records": 1022121,
+      "milliseconds": 4880.26026,
+      "wasmMemoryBytes": 929890304,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 2.988499995281824e-08
+        },
+        "scale": {
+          "maxAbs": 8.940696716308594e-08,
+          "rmse": 2.3092214784885934e-09
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    }
+  ],
+  "elapsedSeconds": 154.66218430700002,
+  "test_environment": "Node WebAssembly, actual compressed geometry and image files",
+  "browser_ui_tested": false,
+  "notes": "Positions/DC/SH/rotations exact; float32 opacity/scale round-trip differences reported per case. WebGL browser smoke test pending."
+}

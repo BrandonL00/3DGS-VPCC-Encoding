@@ -1,0 +1,863 @@
+{
+  "schema": "e19-paper-viewer.v2",
+  "delivery": "e19-compressed",
+  "decoderPath": "decoder/",
+  "engine": "PlayCanvas 2.23.3",
+  "scenes": [
+    {
+      "id": "bicycle",
+      "name": "Bicycle",
+      "camera": {
+        "position": [
+          3.0026817933840073,
+          -1.4007726437615275,
+          -2.2284005560263305
+        ],
+        "target": [
+          0.6896479316160482,
+          -1.153292489214972,
+          -0.33403313458443584
+        ],
+        "up": [
+          -0.03804422066319289,
+          0.9838365806164537,
+          -0.17498062725643193
+        ],
+        "fov": 39.09650632438253,
+        "benchmarkView": "Bicycle Mip-NeRF 360 llffhold=8 01 (_DSC8679)"
+      },
+      "artifacts": [
+        {
+          "id": "64k",
+          "label": "64k",
+          "count": 63504,
+          "targetCount": 64000,
+          "encodedBytes": 984213,
+          "plyBytes": 15750522,
+          "downloadBytes": 992499,
+          "sourcePsnr": 24.294183142234086,
+          "sourceVmaf": 68.18058,
+          "packagePath": "packages/bicycle/64k/",
+          "planPath": "packages/bicycle/64k/decode-plan.json",
+          "nativePlySha256": "b71ccd7c2c807008c9f975282e633d00adf79d8e9439c444bb79753deddc65b5"
+        },
+        {
+          "id": "128k",
+          "label": "128k",
+          "count": 127449,
+          "targetCount": 128000,
+          "encodedBytes": 1908299,
+          "plyBytes": 31608883,
+          "downloadBytes": 1916592,
+          "sourcePsnr": 25.258908950767353,
+          "sourceVmaf": 71.142691,
+          "packagePath": "packages/bicycle/128k/",
+          "planPath": "packages/bicycle/128k/decode-plan.json",
+          "nativePlySha256": "61ac720740d63f93c90890478cc858c74cacafc7ecbad5435568cad7baa4b5f3"
+        },
+        {
+          "id": "256k",
+          "label": "256k",
+          "count": 255025,
+          "targetCount": 256000,
+          "encodedBytes": 3757647,
+          "plyBytes": 63247731,
+          "downloadBytes": 3765938,
+          "sourcePsnr": 26.463220468508815,
+          "sourceVmaf": 75.782986,
+          "packagePath": "packages/bicycle/256k/",
+          "planPath": "packages/bicycle/256k/decode-plan.json",
+          "nativePlySha256": "44e5b1092f01af9d557711520889124f3334ea595b5df42e805508f34a611434"
+        },
+        {
+          "id": "512k",
+          "label": "512k",
+          "count": 511225,
+          "targetCount": 512000,
+          "encodedBytes": 7548200,
+          "plyBytes": 126785331,
+          "downloadBytes": 7556495,
+          "sourcePsnr": 27.26936666762052,
+          "sourceVmaf": 78.978456,
+          "packagePath": "packages/bicycle/512k/",
+          "planPath": "packages/bicycle/512k/decode-plan.json",
+          "nativePlySha256": "e4c387fd9b95d26191c03f02e69db5335c4ee3f12525f21b2d57f1a87dda23fc"
+        },
+        {
+          "id": "1024k",
+          "label": "1.024M",
+          "count": 1022121,
+          "targetCount": 1024000,
+          "encodedBytes": 13676101,
+          "plyBytes": 253487540,
+          "downloadBytes": 13684423,
+          "sourcePsnr": 27.871633954581558,
+          "sourceVmaf": 81.08075,
+          "packagePath": "packages/bicycle/1024k/",
+          "planPath": "packages/bicycle/1024k/decode-plan.json",
+          "nativePlySha256": "4e066666b68caff2f7cf26ad392ed762d30c1a86337af3c007ae705bffb5c6fe"
+        }
+      ]
+    },
+    {
+      "id": "bonsai",
+      "name": "Bonsai",
+      "camera": {
+        "position": [
+          3.7212285514226,
+          -1.9830705231664232,
+          -0.2941856450880261
+        ],
+        "target": [
+          1.1510913188115794,
+          -1.5954669022447976,
+          1.2038657687810062
+        ],
+        "up": [
+          -0.23930622827978038,
+          0.7580520782954387,
+          -0.6067038616149328
+        ],
+        "fov": 35.738680565932356,
+        "benchmarkView": "bonsai KISS protocol 01 (DSCF5565)"
+      },
+      "artifacts": [
+        {
+          "id": "64k",
+          "label": "64k",
+          "count": 63504,
+          "targetCount": 64000,
+          "encodedBytes": 982400,
+          "plyBytes": 15750522,
+          "downloadBytes": 990721,
+          "sourcePsnr": 27.51310092870672,
+          "sourceVmaf": 80.618456,
+          "packagePath": "packages/bonsai/64k/",
+          "planPath": "packages/bonsai/64k/decode-plan.json",
+          "nativePlySha256": "5b90494bb017f45e28b9759151e2db4b1f0c3224389dca59b6c0c9efae1c9511"
+        },
+        {
+          "id": "128k",
+          "label": "128k",
+          "count": 127449,
+          "targetCount": 128000,
+          "encodedBytes": 1914277,
+          "plyBytes": 31608883,
+          "downloadBytes": 1922609,
+          "sourcePsnr": 30.395826130023252,
+          "sourceVmaf": 89.534541,
+          "packagePath": "packages/bonsai/128k/",
+          "planPath": "packages/bonsai/128k/decode-plan.json",
+          "nativePlySha256": "98636937efe2844d88c04537cde802099d28b7eaae8b4bca24e74eaf9e1a636a"
+        },
+        {
+          "id": "256k",
+          "label": "256k",
+          "count": 255025,
+          "targetCount": 256000,
+          "encodedBytes": 3756672,
+          "plyBytes": 63247731,
+          "downloadBytes": 3765003,
+          "sourcePsnr": 30.56809106734709,
+          "sourceVmaf": 91.429111,
+          "packagePath": "packages/bonsai/256k/",
+          "planPath": "packages/bonsai/256k/decode-plan.json",
+          "nativePlySha256": "3c09a33874e208fe668f1767ffcd493dd28b943fe1355e0a647d5f033e1398e0"
+        },
+        {
+          "id": "512k",
+          "label": "512k",
+          "count": 511225,
+          "targetCount": 512000,
+          "encodedBytes": 7399702,
+          "plyBytes": 126785331,
+          "downloadBytes": 7408043,
+          "sourcePsnr": 30.462583222821067,
+          "sourceVmaf": 92.038304,
+          "packagePath": "packages/bonsai/512k/",
+          "planPath": "packages/bonsai/512k/decode-plan.json",
+          "nativePlySha256": "3cefa192cae7a79627a8b0368af237a73fa8e458b4c760ee730f7d4ee9131a45"
+        },
+        {
+          "id": "1024k",
+          "label": "1.024M",
+          "count": 1022121,
+          "targetCount": 1024000,
+          "encodedBytes": 13379734,
+          "plyBytes": 253487540,
+          "downloadBytes": 13388096,
+          "sourcePsnr": 30.384658799989598,
+          "sourceVmaf": 92.182878,
+          "packagePath": "packages/bonsai/1024k/",
+          "planPath": "packages/bonsai/1024k/decode-plan.json",
+          "nativePlySha256": "1f1e931f33052c544e2d7888d3ca51920993ddb6fbef8120b37151ec95d701d5"
+        }
+      ]
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "camera": {
+        "position": [
+          -2.8600304263520306,
+          -1.5212762347655788,
+          -0.6913106580594985
+        ],
+        "target": [
+          -0.6766618105983406,
+          -2.014072835012784,
+          1.3062010436650773
+        ],
+        "up": [
+          0.42227211353506117,
+          0.8723524763255538,
+          -0.24634816658401668
+        ],
+        "fov": 36.02052990681096,
+        "benchmarkView": "counter KISS protocol 01 (DSCF5857)"
+      },
+      "artifacts": [
+        {
+          "id": "64k",
+          "label": "64k",
+          "count": 63504,
+          "targetCount": 64000,
+          "encodedBytes": 1024570,
+          "plyBytes": 15750522,
+          "downloadBytes": 1032897,
+          "sourcePsnr": 29.5807314417085,
+          "sourceVmaf": 90.090728,
+          "packagePath": "packages/counter/64k/",
+          "planPath": "packages/counter/64k/decode-plan.json",
+          "nativePlySha256": "126471df864abab1b92e0e462a0f21d4d5fc989fd1278b018cc57eac84d6b140"
+        },
+        {
+          "id": "128k",
+          "label": "128k",
+          "count": 127449,
+          "targetCount": 128000,
+          "encodedBytes": 1945271,
+          "plyBytes": 31608883,
+          "downloadBytes": 1953597,
+          "sourcePsnr": 30.311798075693876,
+          "sourceVmaf": 92.530997,
+          "packagePath": "packages/counter/128k/",
+          "planPath": "packages/counter/128k/decode-plan.json",
+          "nativePlySha256": "515ffc2474759da7af227248a4097e67b8c1c7a5c5e275acfce6bfc3cb9ec0ec"
+        },
+        {
+          "id": "256k",
+          "label": "256k",
+          "count": 255025,
+          "targetCount": 256000,
+          "encodedBytes": 3877192,
+          "plyBytes": 63247731,
+          "downloadBytes": 3885519,
+          "sourcePsnr": 30.670238044582103,
+          "sourceVmaf": 93.674387,
+          "packagePath": "packages/counter/256k/",
+          "planPath": "packages/counter/256k/decode-plan.json",
+          "nativePlySha256": "9d9841abd0a9c2eeead53da6a71d8f53ef57f43ba9e5393719c92077a99d75d2"
+        },
+        {
+          "id": "512k",
+          "label": "512k",
+          "count": 511225,
+          "targetCount": 512000,
+          "encodedBytes": 7617992,
+          "plyBytes": 126785331,
+          "downloadBytes": 7626335,
+          "sourcePsnr": 30.81240238493102,
+          "sourceVmaf": 94.095992,
+          "packagePath": "packages/counter/512k/",
+          "planPath": "packages/counter/512k/decode-plan.json",
+          "nativePlySha256": "f8cac991418dcb20c367a45a7a8922bbe7d127a18b1ba6d85d15673431cf66fb"
+        },
+        {
+          "id": "1024k",
+          "label": "1.024M",
+          "count": 1022121,
+          "targetCount": 1024000,
+          "encodedBytes": 13650428,
+          "plyBytes": 253487540,
+          "downloadBytes": 13658783,
+          "sourcePsnr": 30.79900042206107,
+          "sourceVmaf": 93.998049,
+          "packagePath": "packages/counter/1024k/",
+          "planPath": "packages/counter/1024k/decode-plan.json",
+          "nativePlySha256": "8ed8d6b66d4bc87e0e8386ccc327c63342ba8574cb86a20b126ea8637ed7e0a4"
+        }
+      ]
+    },
+    {
+      "id": "flowers",
+      "name": "Flowers",
+      "camera": {
+        "position": [
+          0.044550560003616964,
+          -1.4236172811064225,
+          2.92660596573917
+        ],
+        "target": [
+          -0.12924212405085161,
+          -0.7735287540350014,
+          0.0030497391652311023
+        ],
+        "up": [
+          -0.010911420501731176,
+          0.9759623621223222,
+          0.21766581868371465
+        ],
+        "fov": 42.2553757715077,
+        "benchmarkView": "flowers KISS protocol 01 (_DSC9040)"
+      },
+      "artifacts": [
+        {
+          "id": "64k",
+          "label": "64k",
+          "count": 63504,
+          "targetCount": 64000,
+          "encodedBytes": 1025660,
+          "plyBytes": 15750522,
+          "downloadBytes": 1033983,
+          "sourcePsnr": 21.57958374919626,
+          "sourceVmaf": 54.608688,
+          "packagePath": "packages/flowers/64k/",
+          "planPath": "packages/flowers/64k/decode-plan.json",
+          "nativePlySha256": "f3307b08d45209f0b6d41b0725d1a851176571ccc91f2ef85228ca85a344ebd4"
+        },
+        {
+          "id": "128k",
+          "label": "128k",
+          "count": 127449,
+          "targetCount": 128000,
+          "encodedBytes": 1975454,
+          "plyBytes": 31608883,
+          "downloadBytes": 1983781,
+          "sourcePsnr": 22.70205761200488,
+          "sourceVmaf": 59.032272,
+          "packagePath": "packages/flowers/128k/",
+          "planPath": "packages/flowers/128k/decode-plan.json",
+          "nativePlySha256": "9ab049d79a679fdf169b909ea07a2035ed3995ee9e4c36d7e0ce287239de40e2"
+        },
+        {
+          "id": "256k",
+          "label": "256k",
+          "count": 255025,
+          "targetCount": 256000,
+          "encodedBytes": 3960610,
+          "plyBytes": 63247731,
+          "downloadBytes": 3968939,
+          "sourcePsnr": 23.468101910251036,
+          "sourceVmaf": 63.576245,
+          "packagePath": "packages/flowers/256k/",
+          "planPath": "packages/flowers/256k/decode-plan.json",
+          "nativePlySha256": "dbaf5bf3d8b07e06f87d5692d7f1f3039f5a0119e4426c876d814329ce98d7a2"
+        },
+        {
+          "id": "512k",
+          "label": "512k",
+          "count": 511225,
+          "targetCount": 512000,
+          "encodedBytes": 7774955,
+          "plyBytes": 126785331,
+          "downloadBytes": 7783298,
+          "sourcePsnr": 24.634989256037464,
+          "sourceVmaf": 67.924033,
+          "packagePath": "packages/flowers/512k/",
+          "planPath": "packages/flowers/512k/decode-plan.json",
+          "nativePlySha256": "1f9dc8e5fbf60b063d4e1360733b6530a706cc078f0d6b650e70686d06ea997b"
+        },
+        {
+          "id": "1024k",
+          "label": "1.024M",
+          "count": 1022121,
+          "targetCount": 1024000,
+          "encodedBytes": 14061372,
+          "plyBytes": 253487540,
+          "downloadBytes": 14069737,
+          "sourcePsnr": 25.01495166799905,
+          "sourceVmaf": 69.949027,
+          "packagePath": "packages/flowers/1024k/",
+          "planPath": "packages/flowers/1024k/decode-plan.json",
+          "nativePlySha256": "4f9025a390db972ec532ef17362dfd9d6d5a05eadd9888ed0cde02679ad31c1f"
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "name": "Garden",
+      "camera": {
+        "position": [
+          -0.32511876709066195,
+          -2.9957802654512298,
+          -3.225355003982969
+        ],
+        "target": [
+          -0.3119857093946179,
+          -2.1240843463760037,
+          -0.3548195578574296
+        ],
+        "up": [
+          -0.010638588983250229,
+          0.9568136992250932,
+          -0.2905070832176699
+        ],
+        "fov": 47.13621439747184,
+        "benchmarkView": "garden KISS protocol 01 (DSC07956)"
+      },
+      "artifacts": [
+        {
+          "id": "64k",
+          "label": "64k",
+          "count": 63504,
+          "targetCount": 64000,
+          "encodedBytes": 1023044,
+          "plyBytes": 15750522,
+          "downloadBytes": 1031358,
+          "sourcePsnr": 24.154499398962372,
+          "sourceVmaf": 70.273926,
+          "packagePath": "packages/garden/64k/",
+          "planPath": "packages/garden/64k/decode-plan.json",
+          "nativePlySha256": "8838027a7a07b85393a55a40899397fa403f07742b3ee360e75a18deba11f6d1"
+        },
+        {
+          "id": "128k",
+          "label": "128k",
+          "count": 127449,
+          "targetCount": 128000,
+          "encodedBytes": 1976426,
+          "plyBytes": 31608883,
+          "downloadBytes": 1984754,
+          "sourcePsnr": 25.482159538964897,
+          "sourceVmaf": 76.150566,
+          "packagePath": "packages/garden/128k/",
+          "planPath": "packages/garden/128k/decode-plan.json",
+          "nativePlySha256": "51a145bc350e74572b3793990625ff099240b409f1c7830498a9634e612b481a"
+        },
+        {
+          "id": "256k",
+          "label": "256k",
+          "count": 255025,
+          "targetCount": 256000,
+          "encodedBytes": 3983841,
+          "plyBytes": 63247731,
+          "downloadBytes": 3992175,
+          "sourcePsnr": 27.01985746425942,
+          "sourceVmaf": 82.194363,
+          "packagePath": "packages/garden/256k/",
+          "planPath": "packages/garden/256k/decode-plan.json",
+          "nativePlySha256": "42589547124418a3c36645dc5a5062d06263e125f674436fa5a7d09db4e533a6"
+        },
+        {
+          "id": "512k",
+          "label": "512k",
+          "count": 511225,
+          "targetCount": 512000,
+          "encodedBytes": 7895612,
+          "plyBytes": 126785331,
+          "downloadBytes": 7903953,
+          "sourcePsnr": 28.32698038240486,
+          "sourceVmaf": 87.463261,
+          "packagePath": "packages/garden/512k/",
+          "planPath": "packages/garden/512k/decode-plan.json",
+          "nativePlySha256": "1a278729821242c2483f401787aea5809635cad8a7bf23fbf75c6cd12f17a402"
+        },
+        {
+          "id": "1024k",
+          "label": "1.024M",
+          "count": 1022121,
+          "targetCount": 1024000,
+          "encodedBytes": 14218031,
+          "plyBytes": 253487540,
+          "downloadBytes": 14226394,
+          "sourcePsnr": 29.304764213595274,
+          "sourceVmaf": 90.742565,
+          "packagePath": "packages/garden/1024k/",
+          "planPath": "packages/garden/1024k/decode-plan.json",
+          "nativePlySha256": "63cbdb1ec0a7656ad77fc934831932985220d3fcbe5717b954114311be26c648"
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "camera": {
+        "position": [
+          3.504200199464465,
+          -1.9112193314103354,
+          -0.7310674927633084
+        ],
+        "target": [
+          1.18384245210907,
+          -1.6525939332800392,
+          1.15282550518794
+        ],
+        "up": [
+          -0.21962632761896148,
+          0.8928866037465517,
+          -0.3930875081537913
+        ],
+        "fov": 35.551603883565015,
+        "benchmarkView": "kitchen KISS protocol 01 (DSCF0656)"
+      },
+      "artifacts": [
+        {
+          "id": "64k",
+          "label": "64k",
+          "count": 63504,
+          "targetCount": 64000,
+          "encodedBytes": 997410,
+          "plyBytes": 15750522,
+          "downloadBytes": 1005735,
+          "sourcePsnr": 27.922894287771026,
+          "sourceVmaf": 77.183719,
+          "packagePath": "packages/kitchen/64k/",
+          "planPath": "packages/kitchen/64k/decode-plan.json",
+          "nativePlySha256": "8bf25743e1d139eb64e1b1cc5501ab562fd826549a7c98e5ea3a1ad69e6ed395"
+        },
+        {
+          "id": "128k",
+          "label": "128k",
+          "count": 127449,
+          "targetCount": 128000,
+          "encodedBytes": 1932157,
+          "plyBytes": 31608883,
+          "downloadBytes": 1940489,
+          "sourcePsnr": 28.00910020269048,
+          "sourceVmaf": 77.325687,
+          "packagePath": "packages/kitchen/128k/",
+          "planPath": "packages/kitchen/128k/decode-plan.json",
+          "nativePlySha256": "0bd594b418bb2f2c7003ccfe706b77affd2cba8bf4bf55587c705e7ed3dda3c0"
+        },
+        {
+          "id": "256k",
+          "label": "256k",
+          "count": 255025,
+          "targetCount": 256000,
+          "encodedBytes": 3804910,
+          "plyBytes": 63247731,
+          "downloadBytes": 3813244,
+          "sourcePsnr": 27.972070488679407,
+          "sourceVmaf": 82.296683,
+          "packagePath": "packages/kitchen/256k/",
+          "planPath": "packages/kitchen/256k/decode-plan.json",
+          "nativePlySha256": "ca45403bff3838ca140e7bfd0c676e5a916fe62c78e0f662394c799d68b5509b"
+        },
+        {
+          "id": "512k",
+          "label": "512k",
+          "count": 511225,
+          "targetCount": 512000,
+          "encodedBytes": 7479903,
+          "plyBytes": 126785331,
+          "downloadBytes": 7488252,
+          "sourcePsnr": 27.668136240822275,
+          "sourceVmaf": 83.153343,
+          "packagePath": "packages/kitchen/512k/",
+          "planPath": "packages/kitchen/512k/decode-plan.json",
+          "nativePlySha256": "dc1262f250e11727f754ff175be041f50d8f42cbbbfc7b02614f9a355d7d0b82"
+        },
+        {
+          "id": "1024k",
+          "label": "1.024M",
+          "count": 1022121,
+          "targetCount": 1024000,
+          "encodedBytes": 13568285,
+          "plyBytes": 253487540,
+          "downloadBytes": 13576645,
+          "sourcePsnr": 27.663160193863565,
+          "sourceVmaf": 83.829627,
+          "packagePath": "packages/kitchen/1024k/",
+          "planPath": "packages/kitchen/1024k/decode-plan.json",
+          "nativePlySha256": "222e1c54a11c41bad0062f8de6cfcfd35cfef89da10440c3be37e8485275f4cc"
+        }
+      ]
+    },
+    {
+      "id": "room",
+      "name": "Room",
+      "camera": {
+        "position": [
+          2.435030252990346,
+          -1.7857123908132153,
+          -3.1981375458493506
+        ],
+        "target": [
+          0.8763132547543035,
+          -1.6909812611904533,
+          -0.6366092261756409
+        ],
+        "up": [
+          -0.16963291984305393,
+          0.9756121828431724,
+          -0.13930377307704175
+        ],
+        "fov": 36.203008825358964,
+        "benchmarkView": "room KISS protocol 01 (DSCF4667)"
+      },
+      "artifacts": [
+        {
+          "id": "64k",
+          "label": "64k",
+          "count": 63504,
+          "targetCount": 64000,
+          "encodedBytes": 984194,
+          "plyBytes": 15750522,
+          "downloadBytes": 992514,
+          "sourcePsnr": 31.660706363737447,
+          "sourceVmaf": 97.645704,
+          "packagePath": "packages/room/64k/",
+          "planPath": "packages/room/64k/decode-plan.json",
+          "nativePlySha256": "c873493e5419efc94eeedca2f89201c6e0e6fdf1ec338f603c2a0e17f4d6c894"
+        },
+        {
+          "id": "128k",
+          "label": "128k",
+          "count": 127449,
+          "targetCount": 128000,
+          "encodedBytes": 1883112,
+          "plyBytes": 31608883,
+          "downloadBytes": 1891436,
+          "sourcePsnr": 32.06039703003082,
+          "sourceVmaf": 98.164674,
+          "packagePath": "packages/room/128k/",
+          "planPath": "packages/room/128k/decode-plan.json",
+          "nativePlySha256": "ad0c10c8597ce520ca46c700172b6b84d86737ac2f0ef4eab919d3dc5ac54364"
+        },
+        {
+          "id": "256k",
+          "label": "256k",
+          "count": 255025,
+          "targetCount": 256000,
+          "encodedBytes": 3677291,
+          "plyBytes": 63247731,
+          "downloadBytes": 3685620,
+          "sourcePsnr": 32.29041997073944,
+          "sourceVmaf": 98.467167,
+          "packagePath": "packages/room/256k/",
+          "planPath": "packages/room/256k/decode-plan.json",
+          "nativePlySha256": "e2d4734c0f2b63e0960e8a1c056f72a83d20ef747dc52c5f259c564b7f6e643b"
+        },
+        {
+          "id": "512k",
+          "label": "512k",
+          "count": 511225,
+          "targetCount": 512000,
+          "encodedBytes": 7212108,
+          "plyBytes": 126785331,
+          "downloadBytes": 7220450,
+          "sourcePsnr": 32.388981405978974,
+          "sourceVmaf": 98.669832,
+          "packagePath": "packages/room/512k/",
+          "planPath": "packages/room/512k/decode-plan.json",
+          "nativePlySha256": "2024aa72528efedaa3c13453384b848ab0ad222e09838edcba1943029cd05e12"
+        },
+        {
+          "id": "1024k",
+          "label": "1.024M",
+          "count": 1022121,
+          "targetCount": 1024000,
+          "encodedBytes": 13152133,
+          "plyBytes": 253487540,
+          "downloadBytes": 13160494,
+          "sourcePsnr": 32.44150773300052,
+          "sourceVmaf": 98.814004,
+          "packagePath": "packages/room/1024k/",
+          "planPath": "packages/room/1024k/decode-plan.json",
+          "nativePlySha256": "3834b6f46325db2e125350b6a5c95361a12af9fb9321039af208e547d3d525fd"
+        }
+      ]
+    },
+    {
+      "id": "stump",
+      "name": "Stump",
+      "camera": {
+        "position": [
+          -0.8216700131733573,
+          -4.078851269216608,
+          -0.9879000602614256
+        ],
+        "target": [
+          -0.3943122820896561,
+          -1.9323830079898632,
+          1.0639379872533443
+        ],
+        "up": [
+          -0.018331174804166666,
+          0.6927815805367857,
+          -0.7209144538010402
+        ],
+        "fov": 40.04280223394357,
+        "benchmarkView": "stump KISS protocol 01 (_DSC9213)"
+      },
+      "artifacts": [
+        {
+          "id": "64k",
+          "label": "64k",
+          "count": 63504,
+          "targetCount": 64000,
+          "encodedBytes": 997124,
+          "plyBytes": 15750522,
+          "downloadBytes": 1005442,
+          "sourcePsnr": 25.673589310570357,
+          "sourceVmaf": 57.741274,
+          "packagePath": "packages/stump/64k/",
+          "planPath": "packages/stump/64k/decode-plan.json",
+          "nativePlySha256": "629363b34af54fa64107664f3c576a4ea1eb30e37d744323f05b586d0ca3aa8e"
+        },
+        {
+          "id": "128k",
+          "label": "128k",
+          "count": 127449,
+          "targetCount": 128000,
+          "encodedBytes": 1946287,
+          "plyBytes": 31608883,
+          "downloadBytes": 1954605,
+          "sourcePsnr": 26.721251246817836,
+          "sourceVmaf": 61.074209,
+          "packagePath": "packages/stump/128k/",
+          "planPath": "packages/stump/128k/decode-plan.json",
+          "nativePlySha256": "2f612adbb935c3afea8faeb7b8ed40f3f868430e672311f85132fcc29e062bb8"
+        },
+        {
+          "id": "256k",
+          "label": "256k",
+          "count": 255025,
+          "targetCount": 256000,
+          "encodedBytes": 3861706,
+          "plyBytes": 63247731,
+          "downloadBytes": 3870031,
+          "sourcePsnr": 27.72660530480664,
+          "sourceVmaf": 66.163998,
+          "packagePath": "packages/stump/256k/",
+          "planPath": "packages/stump/256k/decode-plan.json",
+          "nativePlySha256": "45835eb3f7066175e4e1f5b01481074b41104242ed615273f92d1c507b677a9c"
+        },
+        {
+          "id": "512k",
+          "label": "512k",
+          "count": 511225,
+          "targetCount": 512000,
+          "encodedBytes": 7691387,
+          "plyBytes": 126785331,
+          "downloadBytes": 7699726,
+          "sourcePsnr": 28.547346314873575,
+          "sourceVmaf": 69.029897,
+          "packagePath": "packages/stump/512k/",
+          "planPath": "packages/stump/512k/decode-plan.json",
+          "nativePlySha256": "be7cb82b46528b63e03a92b410046dee69d512bb3d8bb75e587ae3d897c51983"
+        },
+        {
+          "id": "1024k",
+          "label": "1.024M",
+          "count": 1022121,
+          "targetCount": 1024000,
+          "encodedBytes": 13806911,
+          "plyBytes": 253487540,
+          "downloadBytes": 13815274,
+          "sourcePsnr": 29.08021388966083,
+          "sourceVmaf": 71.575916,
+          "packagePath": "packages/stump/1024k/",
+          "planPath": "packages/stump/1024k/decode-plan.json",
+          "nativePlySha256": "6ef6d8f74bf6d592d901341e2ac01315abc2f4d397f4ad650634a6db72f17a76"
+        }
+      ]
+    },
+    {
+      "id": "treehill",
+      "name": "Treehill",
+      "camera": {
+        "position": [
+          3.904937949997803,
+          -0.8145537871290568,
+          1.133124265571635
+        ],
+        "target": [
+          0.9639297045124029,
+          -0.5756116119108837,
+          0.5914812679349097
+        ],
+        "up": [
+          0.1418828683677861,
+          0.9203805760989182,
+          -0.3643745968142578
+        ],
+        "fov": 43.15015530031728,
+        "benchmarkView": "treehill KISS protocol 01 (_DSC8874)"
+      },
+      "artifacts": [
+        {
+          "id": "64k",
+          "label": "64k",
+          "count": 63504,
+          "targetCount": 64000,
+          "encodedBytes": 998367,
+          "plyBytes": 15750522,
+          "downloadBytes": 1006682,
+          "sourcePsnr": 23.190022330858444,
+          "sourceVmaf": 60.32815,
+          "packagePath": "packages/treehill/64k/",
+          "planPath": "packages/treehill/64k/decode-plan.json",
+          "nativePlySha256": "a2da9f3a8ad29610d97023b882d8bbe11373067bdf7fdf09661e1ead68bbde77"
+        },
+        {
+          "id": "128k",
+          "label": "128k",
+          "count": 127449,
+          "targetCount": 128000,
+          "encodedBytes": 1936410,
+          "plyBytes": 31608883,
+          "downloadBytes": 1944737,
+          "sourcePsnr": 24.195391008594655,
+          "sourceVmaf": 62.49202,
+          "packagePath": "packages/treehill/128k/",
+          "planPath": "packages/treehill/128k/decode-plan.json",
+          "nativePlySha256": "aabcb05f393e8951b86818ccf6cb300a402c724623681f30f84936be9df340d6"
+        },
+        {
+          "id": "256k",
+          "label": "256k",
+          "count": 255025,
+          "targetCount": 256000,
+          "encodedBytes": 3861865,
+          "plyBytes": 63247731,
+          "downloadBytes": 3870209,
+          "sourcePsnr": 25.464365820454084,
+          "sourceVmaf": 66.898483,
+          "packagePath": "packages/treehill/256k/",
+          "planPath": "packages/treehill/256k/decode-plan.json",
+          "nativePlySha256": "a3655d3cee67848ef3a879085d4e6ac4053f959b736860b48204bef2504f91d5"
+        },
+        {
+          "id": "512k",
+          "label": "512k",
+          "count": 511225,
+          "targetCount": 512000,
+          "encodedBytes": 7675746,
+          "plyBytes": 126785331,
+          "downloadBytes": 7684089,
+          "sourcePsnr": 26.12151861295156,
+          "sourceVmaf": 69.582942,
+          "packagePath": "packages/treehill/512k/",
+          "planPath": "packages/treehill/512k/decode-plan.json",
+          "nativePlySha256": "72adc0ff1ad8bd887e67a20c9d32165012dc2a2ec7b4e0f41466192cd28a92fa"
+        },
+        {
+          "id": "1024k",
+          "label": "1.024M",
+          "count": 1022121,
+          "targetCount": 1024000,
+          "encodedBytes": 13954667,
+          "plyBytes": 253487540,
+          "downloadBytes": 13963028,
+          "sourcePsnr": 26.51434926041728,
+          "sourceVmaf": 71.219537,
+          "packagePath": "packages/treehill/1024k/",
+          "planPath": "packages/treehill/1024k/decode-plan.json",
+          "nativePlySha256": "43ac04b3292f321c9754d8b465a36b6a7568bb962b81a881a14699e25d555055"
+        }
+      ]
+    }
+  ]
+}
