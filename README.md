@@ -1,4 +1,4 @@
-# https://github.com/BrandonL00/3DGS-VPCC-Encoding/actions
+# https://brandonl00.github.io/3DGS-VPCC-Encoding
 
 # E19 — 3D Gaussian scene compression with V-PCC
 
