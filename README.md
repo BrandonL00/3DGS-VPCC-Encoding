@@ -1,6 +1,6 @@
-# https://brandonl00.github.io/3DGS-VPCC-Encoding
-
 # E19 — 3D Gaussian scene compression with V-PCC
+
+https://brandonl00.github.io/3DGS-VPCC-Encoding
 
 E19 compresses an existing INRIA-style 3D Gaussian Splatting PLY into a
 directory package and decodes it back into a renderer-ready PLY. It combines
