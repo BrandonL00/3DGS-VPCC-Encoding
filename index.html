@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0;url=./compressed-preview/">
+  <script>
+    const destination = new URL('./compressed-preview/', location.href);
+    if (location.hash.includes('/')) destination.hash = location.hash;
+    location.replace(destination.href);
+  </script>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f4f2ed">
   <title>E19 · Interactive reconstructions</title>
