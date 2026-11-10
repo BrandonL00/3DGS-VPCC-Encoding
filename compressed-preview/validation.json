@@ -1,14 +1,14 @@
 {
   "state": "complete",
-  "total": 45,
-  "completed": 45,
+  "total": 48,
+  "completed": 48,
   "failed": 0,
   "results": [
     {
       "id": "bicycle_64k",
       "ok": true,
       "records": 63504,
-      "milliseconds": 1499.3986570000002,
+      "milliseconds": 1993.7693570000001,
       "wasmMemoryBytes": 929431552,
       "attributes": {
         "positions": {
@@ -1488,10 +1488,117 @@
           "rmse": 0
         }
       }
+    },
+    {
+      "id": "bicycle_preserved_maximum",
+      "ok": true,
+      "records": 6130576,
+      "milliseconds": 18790.982751,
+      "wasmMemoryBytes": 930021376,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 9.5367431640625e-07,
+          "rmse": 6.893727282256984e-08
+        },
+        "scale": {
+          "maxAbs": 2.9802322387695312e-08,
+          "rmse": 3.3796938876026295e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "bonsai_preserved_maximum",
+      "ok": true,
+      "records": 1243225,
+      "milliseconds": 5496.823090999999,
+      "wasmMemoryBytes": 929890304,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 4.76837158203125e-07,
+          "rmse": 9.703704817331685e-08
+        },
+        "scale": {
+          "maxAbs": 1.1920928955078125e-07,
+          "rmse": 8.663485391957847e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
+    },
+    {
+      "id": "garden_preserved_maximum",
+      "ok": true,
+      "records": 5832225,
+      "milliseconds": 17180.198083,
+      "wasmMemoryBytes": 929562624,
+      "attributes": {
+        "positions": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "dc": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "sh": {
+          "maxAbs": 0,
+          "rmse": 0
+        },
+        "opacity": {
+          "maxAbs": 2.384185791015625e-07,
+          "rmse": 6.093972574516834e-08
+        },
+        "scale": {
+          "maxAbs": 5.960464477539063e-08,
+          "rmse": 2.843899923327077e-10
+        },
+        "rotation": {
+          "maxAbs": 0,
+          "rmse": 0
+        }
+      }
     }
   ],
-  "elapsedSeconds": 154.66218430700002,
-  "test_environment": "Node WebAssembly, actual compressed geometry and image files",
   "browser_ui_tested": false,
-  "notes": "Positions/DC/SH/rotations exact; float32 opacity/scale round-trip differences reported per case. WebGL browser smoke test pending."
+  "browser_note": "User confirmed the earlier compacted gallery renders; the new experiment selector and full-scene GPU rendering have not been visually verified.",
+  "full_scene_worker": {
+    "actualWorkerPassed": true,
+    "workerTerminatedBeforeReturn": true,
+    "populationMismatchRejected": true,
+    "progressMessages": 5,
+    "records": 1243225,
+    "outputBytes": 308321332,
+    "milliseconds": 5881.933303,
+    "browserUiTested": false
+  }
 }

@@ -7,10 +7,12 @@ const stage = $('stage');
 const loading = $('loading');
 const selector = $('budget');
 const sceneSelector = $('scene');
+const experimentSelector = $('experiment');
 const mb = bytes => `${(bytes / 1e6).toFixed(2)} MB`;
 let app, camera, manifest, activeAsset, activeEntity, activeURL;
 let target, worldUp;
-const currentScene=()=>manifest.scenes.find(scene=>scene.id===sceneSelector.value);
+const currentExperiment=()=>manifest.experiments.find(item=>item.id===experimentSelector.value);
+const currentScene=()=>currentExperiment().scenes.find(scene=>scene.id===sceneSelector.value);
 
 function status(title, detail, progress = 0) {
     loading.hidden = false;
@@ -136,6 +138,7 @@ async function loadArtifact(id) {
     const artifact = scene.artifacts.find(item => item.id === id);
     selector.disabled = true;
     sceneSelector.disabled = true;
+    experimentSelector.disabled = true;
     loading.classList.remove('error');
     releaseCurrent();
     $('poster').hidden = scene.id!=='bicycle';
@@ -177,15 +180,15 @@ async function loadArtifact(id) {
         activeEntity.addComponent('gsplat', {asset: activeAsset});
         app.root.addChild(activeEntity);
         $('download').href = activeURL;
-        $('download').download = `${scene.id}-C18.3-E19-${id}.ply`;
+        $('download').download = `${scene.id}-3dgs-vpcc-${currentExperiment().id}-${id}.ply`;
         $('download').setAttribute('aria-disabled', 'false');
         // Wait for the first render, not just the asset fetch, before removing the poster.
         app.once('frameend', () => {
             loading.hidden = true;
             $('poster').hidden = true;
         });
-        document.title = `${scene.name} ${artifact.label} · E19`;
-        history.replaceState(null, '', `#${scene.id}/${id}`);
+        document.title = `${scene.name} ${artifact.label} · 3DGS + V-PCC`;
+        history.replaceState(null, '', `#${currentExperiment().id}/${scene.id}/${id}`);
     } catch (error) {
         releaseCurrent();
         loading.classList.add('error');
@@ -193,6 +196,7 @@ async function loadArtifact(id) {
     } finally {
         selector.disabled = false;
         sceneSelector.disabled = false;
+        experimentSelector.disabled = false;
     }
 }
 
@@ -201,11 +205,24 @@ async function main() {
     if (!response.ok) throw new Error('Artifact manifest is unavailable.');
     manifest = await response.json();
     if(!manifest.scenes)manifest.scenes=[{id:'bicycle',name:manifest.scene,camera:manifest.camera,artifacts:manifest.artifacts}];
+    if(!manifest.experiments)manifest.experiments=[{id:'compacted',name:'Compacted + compressed',settingLabel:'Compaction target',scenes:manifest.scenes}];
     const hash=location.hash.slice(1).split('/');
+    const experimentId=hash.length===3?hash.shift():'compacted';
     const sceneId=hash.length>1?hash[0]:'bicycle';
     const budgetId=hash.length>1?hash[1]:hash[0]||'64k';
-    sceneSelector.replaceChildren(...manifest.scenes.map(scene=>new Option(scene.name,scene.id)));
-    sceneSelector.value=manifest.scenes.some(scene=>scene.id===sceneId)?sceneId:manifest.scenes[0].id;
+    experimentSelector.replaceChildren(...manifest.experiments.map(item=>new Option(item.name,item.id)));
+    experimentSelector.value=manifest.experiments.some(item=>item.id===experimentId)?experimentId:manifest.experiments[0].id;
+    const populateScenes=preferred=>{
+        const experiment=currentExperiment();
+        sceneSelector.replaceChildren(...experiment.scenes.map(scene=>new Option(scene.name,scene.id)));
+        sceneSelector.value=experiment.scenes.some(scene=>scene.id===preferred)?preferred:experiment.scenes[0].id;
+        $('setting-label').textContent=experiment.settingLabel;
+        $('experiment-tag').textContent=experiment.name;
+        $('experiment-note').textContent=experiment.id==='preserved'
+            ?'Full-scene encoding without learned compaction. Maximum-quality preset; large scenes may take longer to decode and render.'
+            :'Learned compaction followed by compression. Choose a target population to explore the size–quality tradeoff.';
+    };
+    populateScenes(sceneId);
     const populateBudgets=preferred=>{
         const scene=currentScene();
         selector.replaceChildren(...scene.artifacts.map(item=>new Option(item.label,item.id)));
@@ -227,6 +244,16 @@ async function main() {
     resize();
     app.start();
     selector.addEventListener('change', () => loadArtifact(selector.value));
+    experimentSelector.addEventListener('change',()=>{
+        const previousScene=sceneSelector.value;
+        populateScenes(previousScene);
+        populateBudgets(selector.value);
+        if(sceneSelector.value!==previousScene){
+            camera.camera.fov=currentScene().camera.fov;
+            resetCamera();
+        }
+        loadArtifact(selector.value);
+    });
     sceneSelector.addEventListener('change',()=>{
         populateBudgets(selector.value);
         camera.camera.fov=currentScene().camera.fov;
